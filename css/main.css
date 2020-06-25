@@ -1,0 +1,57 @@
+.bg-green {
+    background-color: rgba(0, 82, 0, 0.8)
+}
+
+.min-h-100 {
+    min-height: 100vh;
+}
+
+.carousel-caption {
+    left: 0;
+    right: 0;
+    bottom: 50px;
+    width: 100% !important;
+}
+
+.min-vh-50 {
+    min-height: 50vh !important;
+}
+
+.background-image-stock-blueprint-ruler {
+    background-image: url("../img/stock/blueprint-ruler.jpg");
+    background-size: 1920px;
+    background-attachment: fixed;
+}
+
+.background-image-raster-grey {
+    background: url("../img/background-colored.png") repeat -50px -50px scroll ;
+    background-size: 800px;
+}
+
+.dropdown-toggle::after {
+    border-bottom: .3em solid;
+    border-right: .3em solid transparent;
+    border-top: 0;
+    border-left: .3em solid transparent;
+}
+
+.dropdown-toggle.collapsed::after {
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+}
+
+.card-green {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: rgba(0, 82, 0, 0.8);
+    background-clip: border-box;
+    border: 1px solid rgba(65, 145, 65, 0.8);
+    border-radius: .25rem;
+}
