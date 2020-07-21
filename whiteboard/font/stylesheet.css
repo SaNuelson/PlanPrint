@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Throw My Hands Up in the Air';
+    src: url('ThrowMyHandsUpintheAir-Bold.woff2') format('woff2'),
+        url('ThrowMyHandsUpintheAir-Bold.woff') format('woff'),
+        url('ThrowMyHandsUpintheAir-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Throw My Hands Up in the Air';
+    src: url('ThrowMyHandsUpintheAir.woff2') format('woff2'),
+        url('ThrowMyHandsUpintheAir.woff') format('woff'),
+        url('ThrowMyHandsUpintheAir.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

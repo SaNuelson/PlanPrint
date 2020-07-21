@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+    <title>O nás | PlanPrint s.r.o.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="version" content="1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="font/stylesheet.css">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        a {
+            font-family: 'Throw My Hands Up in the Air';
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        
+        #root {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: url(img/backwall.jpg);
+            background-repeat: repeat;
+            background-size: 500px 300px;
+        }
+        
+        .zoomed {
+            transition: all 1s ease-in-out;
+            transform-origin: top left;
+            transform: scale(2.5);
+        }
+        
+        #main {
+            border: 3rem solid transparent;
+            border-image-source: url(img/wboard.png);
+            border-image-slice: 65 65 65 65 fill;
+            border-image-width: 2rem 2rem 2rem 2rem;
+            border-image-outset: 0px 0px 0px 0px;
+            border-image-repeat: stretch stretch;
+            overflow: hidden;
+            height: calc(100vh - 8rem);
+        }
+        
+        .section {
+            background-color: orange;
+            border: 5px solid brown;
+            max-height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="root" class="step">
+
+        <div id="section-about-us" class="step" data-x="-1000" data-y="-400">
+
+            <h3>O nás (úvod)</h3>
+            <p>
+                Spoločnosť PlanPrint, s. r. o. poskytuje už od roku 2007 špecializované služby veľkoformátovej CAD tlače, digitalizácie projektov a kompletnej reprografie projektovej dokumentácie. Naše služby pravidelne využívajú stovky zákazníkov z radov architektov,
+                projektantov, geodetov, stavebných spoločností a samospráv z nitrianskeho regiónu. Vďaka špecializácii sme schopní poskytovať rýchle a kvalitné služby, pričom ceny dlhodobo udržiavame na najnižších možných úrovniach. Prehľadnosť a stabilita
+                cien sú trvalo našou silnou stránkou. Rovnako profesionálne Vám vytlačíme jeden výkres alebo tisíc výkresov. Vysoký počet veľkoformátových zariadení s enormnou tlačovou kapacitou je pre našich zákazníkov zárukou kvalitných výstupov v čo
+                najkratšom čase. Naše stroje sú pravidelne profesionálne servisované, čo zaručuje vždy mimoriadnu kvalitu produkcie. Vysoké kvalitatívne štandardy, niekoľkonásobná výstupná kontrola kvality a početnosti prinášajú našim zákazníkom maximálnu
+                mieru spoľahlivosti. Zároveň znižujú čas pre prácu s výstupmi na nevyhnutnú minimálnu mieru. Navyše – každý stroj máme minimálne dvojmo (farebné tlačiarne, čiernobiele tlačiarne, skenery, dokonca skladačky), čo znamená, že nás v tlači
+                neobmedzuje plánovaný alebo neplánovaný servis žiadneho zariadenia. Jednoducho tlačiť, kopírovať či skenovať pre nás nie je problém kedykoľvek.
+            </p>
+
+        </div>
+
+        <div id="section-news" class="step" data-x="0" data-y="-400">
+
+            <h3>Novinky</h3>
+
+            <h6>1.6.</h6>
+            <p>
+                Pripravili sme pre Vás novú webovú stránku, tentokrát aj s podporou pre mobilné zariadenia. Veríme, že na nej nájdete všetky potrebné informácie rýchlo a ľahko.
+            </p>
+
+            <h6>6.5.</h6>
+            <p>
+                Do odvolania sme upravili našu pracovnú dobu – každý pracovný deň 8:00 – 14:00.
+            </p>
+
+            <h6>1.4.</h6>
+            <p>Ako to funguje:<br /> 1. V maily s Vašou objednávkou napíšte, že výkresy si chcete vyzdvihnúť mimo pracovnej doby (v<br /> súčasnosti pracujeme od 8:00 do 12:00). Nezabudnite pripísať mobilné telefónne číslo, na ktoré Vám<br /> odošleme štvormiestny
+                dočasný otvárací kód do boxu.<br /> 2. Do konca pracovnej doby obdržíte SMS s kódom a inštrukciami pre vyzdvihnutie. Box sa nachádza<br /> pred bránou do dvora vľavo vo výklenku. Je dostupný 24 hodín denne. Keďže ide o skúšobnú prevádzku,<br
+                /> v boxe sa môže nachádzať viac samostatných balíčkov s dokumentáciou, v takom prípade bude každý<br /> označený menom. PO PREVZATÍ VÁS PROSÍME O ZATVORENIE BOXU.
+                <br /> Táto služba je určená prednostne pre zákazníkov s mesačnou fakturáciou.</p>
+
+        </div>
+
+        <div id="section-services" class="step" data-x="1000" data-y="-400">
+
+            <h3>Služby</h3>
+            <p>Radi pre Vás projektovú dokumentáciu vytlačíme, skopírujeme, alebo zdigitalizujeme. Farebnú tlač<br /> realizujeme na plotroch Canon ImagePROGRAF, čiernobiele výtlačky na zariadeniach Oce a Xerox,<br /> digitalizáciu na skeneri Xerox Synergix
+                a OCE CIS. Naše zariadenia majú aktívnu plochu tlače a skenu</p>
+
+            <p>914 mm (36“), skenovaná predloha môže byť široká do 1095 mm. Súčasťou ponuky služieb je
+                <br /> samozrejme profesionálne skladanie dokumentácie na kvalitných nemeckých zariadeniach značky Es-te.
+                <br /> Farebná tlač:<br /> - čiarová, plošná
+                <br /> - tlač aj z DWG, DWF bez príplatkov, možnosť tlače z DGN a ďalších formátov<br /> - tri tlačové plotre
+                <br /> - celková rýchlosť tlače je 4,5 A1 za minútu (normálny režim, obyčajný papier)<br /> - možnosť tlače posterov a zväčšenín fotografií na grafické médiá (natieraný papier 120g, 180g – foto<br /> kvalita)
+                <br /> Čiernobiela tlač:<br /> - až dve vysokorýchlostné laserové tlačiarne s presnou digitálnou tlačou
+                <br /> - celková rýchlosť tlače je viac ako 6 A0 za minútu<br /> - tlač aj z DWG, DWF bez príplatkov, možnosť tlače z DGN a ďalších formátov<br /> Skenovanie:
+                <br /> - výstupy PDF, TIFF, JPG až do 600 dpi<br /> - čiernobiely aj farebný režim<br /> Kopírovanie:
+                <br /> - čiernobiele aj farebné kopírovanie projektovej dokumentácie do šírky 914mm
+                <br /> - pri problematických predlohách (ozalidy, jemné čiary slabých odtieňov) realizujeme softvérové úpravy s<br /> cieľom dosiahnuť maximálny efekt – doostrenie, potlačenie šumu, zosvetlenie...<br /> Skladanie a kompletizácia:
+                <br /> - extrémne rýchle skladanie na dvoch skladacích strojoch Es-te 2300
+                <br /> - celková rýchlosť nad 30 metrov za minútu<br /> - skladanie podľa noriem DIN824, AFNOR, ANSI...
+                <br /> - kompletizácia projektovej dokumentácie podľa individuálnych požiadaviek zákazníka<br /> Maloformátová tlač, kópie, digitalizácia:
+                <br /> - správy a výkresy do A3 formátu<br /> - ČB + farba<br /> Prevod do formátu PDF:<br /> - ušetríme Vám čas a uložíme Vašu dokumentáciu do formátu PDF z formátov DWG, DXF, DGN, DOC,<br /> XLS a ďalších
+                <br /> - možnosť zaslania skonvertovanej a pripravenej dokumentácie priamo investorovi, resp. projektovému<br /> manažérovi – ušetríme Váš čas<br /> Fakturácia raz mesačne:<br /> - pre stálych zákazníkov možnosť realizácie služieb na objednávky
+                <br /> - fakturácia vždy na konci mesiaca<br /> - faktúra zasielaná mailom</p>
+
+        </div>
+
+
+        <div id="section-process" class="step" data-x="-1000" data-y="400">
+
+            <h3>Ako to prebieha?</h3>
+
+            <p>Príklady realizácie služieb:<br /> Tlač
+                <br /> - pošlete nám mailom požiadavku na tlač projektovej dokumentácie, napíšete nám počet paré, či ide o
+                <br /> farebnú alebo ČB tlač, prípadne špeciálne požiadavky (napr. použitie plotrovacieho štýlu pri tlači z<br /> AutoCADu) a čas, kedy chcete mať dokumentáciu pripravenú.<br /> - vo vami požadovanom čase sa zastavíte pre dokumentáciu
+                pripravenú podľa Vašich požiadaviek<br /> - pokiaľ chcete, môžete si v našich priestoroch dokumentáciu skompletovať (podpísať, opečiatkovať) a<br /> priamo od nás pokračovať napríklad k investorovi, prípadne si ju môže investor následne
+                prevziať aj u nás</p>
+
+            <p>– využijete našu pracovnú dobu.<br /> Kopírovanie
+                <br /> - prinesiete k nám dokumentáciu a my ju podľa Vašich pokynov v dohodnutom čase skopírujeme (pokiaľ
+                <br /> sa nám to podarí skôr, môžeme Vás ihneď informovať)<br /> - zastavíte sa po pripravenú dokumentáciu
+                <br /> Všeobecne
+                <br /> - vždy sa snažíme minimalizovať čas realizácie každej zákazky, niekedy sa však môže stať, že sa naraz
+                <br /> stretne viac požiadaviek – v takom prípade sa snažíme postupovať chronologicky s ohľadom na
+                <br /> požiadavky jednotlivých zákazníkov a spravidla sú v cieli spokojní všetci zúčastnení<br /> - pre zadanie alebo vyzdvihnutie zákazky je možné využiť krátkodobé parkovanie vo dvore<br /> - pokiaľ je to možné, zákazku realizujeme okamžite,
+                často aj na počkanie (podľa rozsahu a aktuálnej<br /> situácie)
+                <br /> - v prípade tlače nám väčšie prílohy (nad 5MB) posielajte cez doručovacie služby typu www.uschovna.cz
+            </p>
+
+        </div>
+
+        <div id="section-contact" class="step" data-x="0" data-y="400">
+
+            <h3>Kontakt</h3>
+
+            <p>Kontakt:<br /> PlanPrint s.r.o.<br /> Farská 4<br /> /1. poschodie/<br /> 949 01 Nitra
+                <br /> IČO: 36 698 695<br /> IČ DPH: SK2022270734<br /> tel: +421 (0)37 7418516
+                <br /> mail: office/zavinac/planprint.sk<br /> Matúš Pavle<br /> +421 (0)905 547 475
+                <br /> Otváracie hodiny:<br /> Pracovné dni 8.00 – 14.00</p>
+
+        </div>
+
+        <div id="section-pricing" class="step" data-x="1000" data-y="400">
+
+            <h3>Cenník</h3>
+
+            <p>Cenník služieb.pdf Posledná aktualizácia cenníka: 1.6.2020</p>
+
+        </div>
+
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="impress.js"></script>
+    <script>
+        let api = impress('root');
+        api.init();
+        $(window).click(() => api.next());
+    </script>
+</body>
+
+</html>
