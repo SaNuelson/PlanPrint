@@ -1,5 +1,7 @@
 let plx = new Parallax(document.getElementById('root'), {
-    pointerEvents: true
+    pointerEvents: true,
+    invertX: false,
+    invertY: false
 });
 
 function delay(t, v) {
@@ -10,12 +12,23 @@ function delay(t, v) {
 
 
 $(() => {
+    // check for dynamic link
+    if (window.location.hash)
+        return loadPageQuick(window.location.hash.replace('#', ''));
+
+    // replace static linking
+    $('a[data-link]').each((_, el) => {
+        $(el).attr('href', '#' + $(el).attr('data-link'));
+    })
+
     $('body').on('click', 'a', function(e) {
         loadPage(e.target.href.replace(/.*#/, ''));
     })
 })
 
 function loadPage(pagename) {
+    console.log("Loading page ", pagename);
+
     if (pagename === 'main') {
         $('#loadscreen')
             .addClass('reverse')
@@ -32,13 +45,23 @@ function loadPage(pagename) {
         $('#loadscreen')
             .removeClass('reverse')
             .fadeIn(500);
-        fetch('subpages/' + pagename + '.htm')
-            .then(res => res.text()).then(text => {
-                setTimeout(() => {
-                    $('body').append($('<div id="subpage"></div>').html(text));
-                    $('#loadscreen').fadeOut(500);
-                }, 2000);
-            })
-            .catch(() => loadPage('subpage'));
+
+        setTimeout(() => {
+            $('<div/>').load('subpages/' + pagename + '.htm div#main', function() {
+                console.log(this);
+                $('body').append($(this).children());
+            });
+            $('#loadscreen').fadeOut(500);
+        }, 2000);
     }
+}
+
+function loadPageQuick(pagename) {
+    console.log("Quickloading page", pagename);
+    $('#loadscreen').show();
+    $('#root').hide();
+    $('<div/>').load('subpages/' + pagename + '.htm div#main', function() {
+        $('#loadscreen').hide();
+        $('body').append($(this).children());
+    });
 }
