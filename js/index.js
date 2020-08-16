@@ -12,7 +12,7 @@ function delay(t, v) {
 $(() => {
     {
         let imgsrcs = [
-            "img/thumbnails/canon_ipf.jpg",
+            "img/thumbnails/canonipf.jpg",
             "img/thumbnails/estefold2300.jpg",
             "img/thumbnails/oceplotwave450.jpg",
             "img/thumbnails/p1100477.jpg",
