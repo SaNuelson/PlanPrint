@@ -2,49 +2,94 @@
 <html lang="sk">
 
 <head>
-    <title>Novinky | PlanPrint s.r.o.</title>
+    <title>O nás | PlanPrint s.r.o.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="version" content="1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="css/index.css" rel="stylesheet" media="screen">
+    <link href="../css/index.css" rel="stylesheet" media="screen">
+    <link href="../css/static.css" rel="stylesheet" media="screen">
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black shadow-black">
+        <a class="navbar-brand" href="#">
+            <img src="../img/logo.png" class="img-fluid" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div id="main" class="container">
-        <div class="row">
-            <h3>Novinky</h3>
-        </div>
-        <div class="row">
-            <h4>1.6.2019</h4>
-            <p>
-                Pripravili sme pre Vás novú webovú stránku, tentokrát aj s podporou pre mobilné zariadenia. Veríme, že na nej nájdete všetky potrebné informácie rýchlo a ľahko.
-            </p>
-        </div>
-        <div class="row">
-            <h4>6.5.2019</h4>
-            <p>
-                Do odvolania sme upravili našu pracovnú dobu – každý pracovný deň 8:00 – 14:00.
-            </p>
-        </div>
-        <div class="row">
-            <h4>1.4.2019</h4>
-            <p>
-                prinášame Vám službu preberacieho boxu pre vyzdvihnutie projektovej dokumentácie mimo pracovnej doby našej spoločnosti. Táto služba sa týka menších množstiev projektovej dokumentácie, veľké akcie a neskladané výkresy nie je možné do boxu vložiť.
-            </p>
-            <h4>Ako to funguje:</h4>
-            <ol>
-                <li>
-                    V maily s Vašou objednávkou napíšte, že výkresy si chcete vyzdvihnúť mimo pracovnej doby (v súčasnosti pracujeme od 8:00 do 12:00). Nezabudnite pripísať mobilné telefónne číslo, na ktoré Vám odošleme štvormiestny dočasný otvárací kód do boxu.
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="about-us.htm">O nás</a>
                 </li>
-                <li>
-                    Do konca pracovnej doby obdržíte SMS s kódom a inštrukciami pre vyzdvihnutie. Box sa nachádza pred bránou do dvora vľavo vo výklenku. Je dostupný 24 hodín denne. Keďže ide o skúšobnú prevádzku, v boxe sa môže nachádzať viac samostatných balíčkov s dokumentáciou,
-                    v takom prípade bude každý označený menom. PO PREVZATÍ VÁS PROSÍME O ZATVORENIE BOXU. Táto služba je určená prednostne pre zákazníkov s mesačnou fakturáciou.
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Služby</a>
                 </li>
-            </ol>
+                <li class="nav-item">
+                    <a class="nav-link" href="process.htm">Proces</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="news.htm">Novinky <span class="sr-only">(aktuálne)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pricing.htm">Cenník</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.htm">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="main" class="sub-bg">
+        <div class="sub-page container px-5">
+            <div class="row p-5">
+                <h3 class="display-3">Novinky</h3>
+            </div>
+
+            <div class="card bg-black-half border-success mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">1.6.2019</h5>
+                    <p class="card-text">
+                        Pripravili sme pre Vás novú webovú stránku, tentokrát aj s podporou pre mobilné zariadenia. Veríme, že na nej nájdete všetky potrebné informácie rýchlo a ľahko.
+                    </p>
+                </div>
+            </div>
+            <div class="card bg-black-half border-success mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">6.5.2019</h5>
+                    <p class="card-text">
+                        Do odvolania sme upravili našu pracovnú dobu – každý pracovný deň 8:00 – 14:00.
+                    </p>
+                </div>
+            </div>
+            <div class="card bg-black-half border-success mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">1.4.2019</h5>
+                    <p class="card-text">
+                        Prinášame Vám službu <em>preberacieho boxu</em> pre vyzdvihnutie projektovej dokumentácie mimo pracovnej doby našej spoločnosti. Táto služba sa týka menších množstiev projektovej dokumentácie, veľké akcie a neskladané výkresy nie
+                        je možné do boxu vložiť.
+                    </p>
+                    <div id="card-more-1" class="card-text collapse">
+                        <h4>Ako to funguje:</h4>
+                        <ol>
+                            <li>
+                                V maili s Vašou objednávkou napíšte, že si výkresy chcete vyzdvihnúť mimo pracovnej doby (v súčasnosti pracujeme od 8:00 do 12:00). Nezabudnite pripísať mobilné telefónne číslo, na ktoré Vám odošleme štvormiestny dočasný otvárací kód do boxu.
+                            </li>
+                            <li>
+                                Do konca pracovnej doby obdržíte SMS s kódom a inštrukciami pre vyzdvihnutie. Box sa nachádza pred bránou do dvora vľavo vo výklenku. Je dostupný 24 hodín denne. Keďže ide o skúšobnú prevádzku, v boxe sa môže nachádzať viac samostatných balíčkov s dokumentáciou,
+                                v takom prípade bude každý označený menom. PO PREVZATÍ VÁS PROSÍME O ZATVORENIE BOXU. Táto služba je určená prednostne pre zákazníkov s mesačnou fakturáciou.
+                            </li>
+                        </ol>
+                    </div>
+                    <a class="btn btn-outline-success float-right news-show-more-btn collapsed" data-toggle="collapse" href="#card-more-1" role="button" aria-expanded="false"></a>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -55,3 +100,5 @@
     <script src="js/index.js"></script>
 
 </body>
+
+</html>

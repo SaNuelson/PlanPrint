@@ -2,68 +2,134 @@
 <html lang="sk">
 
 <head>
-    <title>Kontakt | PlanPrint s.r.o.</title>
+    <title>O nás | PlanPrint s.r.o.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="version" content="1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="css/index.css" rel="stylesheet" media="screen">
+    <link href="../css/index.css" rel="stylesheet" media="screen">
+    <link href="../css/static.css" rel="stylesheet" media="screen">
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black shadow-black">
+        <a class="navbar-brand" href="#">
+            <img src="../img/logo.png" class="img-fluid" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div id="main" class="container">
-
-        <div class="row">
-            <h3>Kontakt</h3>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="about-us.htm">O nás</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.htm">Služby</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="process.htm">Proces</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="news.htm">Novinky</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pricing.htm">Cenník</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Kontakt <span class="sr-only">(aktuálne)</span></a>
+                </li>
+            </ul>
         </div>
-        <div class="row">
-            <p>
-                PlanPrint s.r.o.
-            </p>
-            <p>
-                Farská 4
-            </p>
-            <p>
-                (1.poschodie)
-            </p>
-            <p>
-                949 01 Nitra
-            </p>
-            <p>
-                IČO: 36 698 695
-            </p>
-            <p>
-                IČ DPH: SK2022270734
-            </p>
-            <p>
-                tel: +421 (0)37 7418516
-            </p>
-            <p>
-                mail: office/zavinac/planprint.sk
-            </p>
-            <br/>
-            <p>
-                Matúš Pavle
-            </p>
-            <p>
-                +421 (0)905 547 475
-            </p>
-            <p>
-                Otváracie hodiny:
-            </p>
-            <p>
-                Pracovné dni 8.00 – 14.00
-            </p>
+    </nav>
+
+    <div id="main" class="sub-bg">
+        <div class="sub-page container px-5">
+
+            <div class="row p-5">
+                <h3 class="display-3">Kontakt</h3>
+            </div>
+
+            <div class="row">
+
+                <div class="col-6">
+
+                    <div class="row ">
+                        PlanPrint s.r.o.
+                    </div>
+                    <div class="row ">
+                        Farská 4
+                    </div>
+                    <div class="row ">
+                        (1.poschodie)
+                    </div>
+                    <div class="row ">
+                        949 01 Nitra
+                    </div>
+                    <div class="row ">
+                        IČO: 36 698 695
+                    </div>
+                    <div class="row ">
+                        IČ DPH: SK2022270734
+                    </div>
+                    <div class="row ">
+                        tel: +421 (0)37 7418516
+                    </div>
+                    <div class="row ">
+                        mail: office/zavinac/planprint.sk
+                    </div>
+                    <div class="row ">
+                        Matúš Pavle
+                    </div>
+                    <div class="row ">
+                        +421 (0)905 547 475
+                    </div>
+                    <div class="row ">
+                        Otváracie hodiny:
+                    </div>
+                    <div class="row ">
+                        Pracovné dni 8.00 – 14.00
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <form action="https://formspree.io/myynvrly" method="POST">
+                        <div class="form-group">
+                            <label for="emailInput">Vaša emailová adresa</label>
+                            <input name="email" type="email" id="emailInput" class="form-control" aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">Váš email nebude nijakým spôsobom zverejnený.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="emailTypeSelect">Dôvod správy</label>
+                            <select name="type" id="emailTypeSelect" class="form-control">
+                            <option>Nová objednávka</option>
+                            <option>Existujúca objednávka</option>
+                            <option>Technická záležitosť</option>
+                            <option>Iné</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="emailText">Vaša správa</label>
+                            <textarea name="text" class="form-control" id="emailText"></textarea>
+                        </div>
+                        <button type=" submit " class="btn btn-primary ">Submit</button>
+                    </form>
+                </div>
+
+            </div>
         </div>
     </div>
+    </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js "></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
+    <script src="js/index.js "></script>
 
 </body>
+
+</html>
