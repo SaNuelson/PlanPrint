@@ -10,41 +10,44 @@ function delay(t, v) {
 
 
 $(() => {
-    let imgsrcs = [
-        "img/thumbnails/Canon_iPF.JPG",
-        "img/thumbnails/estefold2300.JPG",
-        "img/thumbnails/OCEplotwave450.JPG",
-        "img/thumbnails/P1100477.JPG",
-        "img/thumbnails/P1110173a.JPG",
-        "img/thumbnails/P1110174a.JPG",
-        "img/thumbnails/P1110178a.JPG",
-        "img/thumbnails/P1110181a.JPG",
-        "img/thumbnails/P1110182a.JPG",
-        "img/thumbnails/P1110186a.JPG",
-        "img/thumbnails/P1110189a.JPG",
-        "img/thumbnails/SharpMX3060.JPG",
-        "img/thumbnails/sidlo.JPG",
-        "img/thumbnails/Synergix_scanner.JPG",
-        "img/thumbnails/Xerox6204.JPG",
-        "img/thumbnails/Xerox6204printer.JPG"
-    ];
-    for (let imgsrc of imgsrcs) {
-        $('#imagelayer').append(
-            $('<div class="sector sectorimage"></div>').append(
-                $('<img />')
-                .attr('src', imgsrc)
+    {
+        let imgsrcs = [
+            "img/thumbnails/canon_ipf.jpg",
+            "img/thumbnails/estefold2300.jpg",
+            "img/thumbnails/oceplotwave450.jpg",
+            "img/thumbnails/p1100477.jpg",
+            "img/thumbnails/p1110173a.jpg",
+            "img/thumbnails/p1110174a.jpg",
+            "img/thumbnails/p1110178a.jpg",
+            "img/thumbnails/p1110181a.jpg",
+            "img/thumbnails/p1110182a.jpg",
+            "img/thumbnails/p1110186a.jpg",
+            "img/thumbnails/p1110189a.jpg",
+            "img/thumbnails/sharpmx3060.jpg",
+            "img/thumbnails/sidlo.jpg",
+            "img/thumbnails/synergix_scanner.jpg",
+            "img/thumbnails/xerox6204.jpg",
+            "img/thumbnails/xerox6204printer.jpg"
+        ];
+
+        (function f(idx) {
+            if (idx >= imgsrcs.length) idx = 0;
+            let img = $('<div class="sector sectorimage"></div>').append(
+                $('<img/>')
+                .attr('src', imgsrcs[idx])
                 .addClass('img-fluid')
-            )
-            .css({
-                left: 'calc((100vw - 250px) * ' + Math.random() + ')',
-                'animation-delay': Math.random() * 100 + 's'
-            })
-        );
+            ).css({
+                left: 'calc((100vw - 250px) * ' + Math.random() + ')'
+            });
+            $('#imagelayer').append(img);
+            setTimeout(() => img.remove(), 15000);
+            setTimeout(() => f(idx + 1), 4000);
+        })(0);
     }
 
     $('#imagelayer').on('click', '.sectorimage', function(e) {
         $('#popup-wrapper').toggle();
-        $('#popup-img').attr('src', e.target.src);
+        $('#popup-img').attr('src', e.target.src.replace('thumbnails', 'fullsize'));
     })
 
     $('#popup-btn').on('click', function(e) {

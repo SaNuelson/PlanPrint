@@ -75,7 +75,7 @@ body.loading #loadscreen {
     max-width: 250px;
     min-width: 60px;
     top: -500px;
-    animation: falling 100s linear infinite;
+    animation: falling 15s linear infinite;
 }
 
 .sectorimage,
@@ -113,13 +113,10 @@ body.loading #loadscreen {
 }
 
 @keyframes falling {
-    0% {
+    from {
         top: -50vh;
     }
-    20% {
-        top: 110vh;
-    }
-    100% {
+    to {
         top: 110vh;
     }
 }
@@ -216,7 +213,7 @@ body.loading #loadscreen {
     position: fixed;
     display: none;
     background-color: rgba(0, 0, 0, 0.8);
-    padding-top: 100px;
+    padding: 100px;
     overflow: auto;
     top: 0;
     left: 0;
@@ -228,7 +225,7 @@ body.loading #loadscreen {
     margin: auto;
     display: block;
     width: 80%;
-    max-width: 700px;
+    max-width: 85vw;
 }
 
 .modal-button {
