@@ -10,59 +10,10 @@ function delay(t, v) {
 
 
 $(() => {
-    {
-        let imgsrcs = [
-            "img/thumbnails/canonipf.jpg",
-            "img/thumbnails/estefold2300.jpg",
-            "img/thumbnails/oceplotwave450.jpg",
-            "img/thumbnails/p1100477.jpg",
-            "img/thumbnails/p1110173a.jpg",
-            "img/thumbnails/p1110174a.jpg",
-            "img/thumbnails/p1110178a.jpg",
-            "img/thumbnails/p1110181a.jpg",
-            "img/thumbnails/p1110182a.jpg",
-            "img/thumbnails/p1110186a.jpg",
-            "img/thumbnails/p1110189a.jpg",
-            "img/thumbnails/sharpmx3060.jpg",
-            "img/thumbnails/sidlo.jpg",
-            "img/thumbnails/synergix_scanner.jpg",
-            "img/thumbnails/xerox6204.jpg",
-            "img/thumbnails/xerox6204printer.jpg"
-        ];
-
-        (function f(idx) {
-            if (idx >= imgsrcs.length) idx = 0;
-            let img = $('<div class="sector sectorimage"></div>').append(
-                $('<img/>')
-                .attr('src', imgsrcs[idx])
-                .addClass('img-fluid')
-            ).css({
-                left: 'calc((100vw - 250px) * ' + Math.random() + ')'
-            });
-            $('#imagelayer').append(img);
-            setTimeout(() => img.remove(), 15000);
-            setTimeout(() => f(idx + 1), 4000);
-        })(0);
-    }
-
-    $('#imagelayer').on('click', '.sectorimage', function(e) {
-        $('#popup-wrapper').toggle();
-        $('#popup-img').attr('src', e.target.src.replace('thumbnails', 'fullsize'));
-    })
 
     $('#popup-btn').on('click', function(e) {
         $('#popup-wrapper').toggle();
     })
-
-
-    $('#footer-button').on('click', function() {
-        $('.footer')
-            .toggleClass('hidden');
-
-        $('i', $('#footer-button'))
-            .toggleClass('fa-chevron-up')
-            .toggleClass('fa-chevron-down');
-    });
 
     // check for dynamic link on load
     if (window.location.hash && !loadPage(window.location.hash.replace('#', '')))
@@ -85,7 +36,7 @@ $(() => {
     })
 })
 
-let pageCheck = 'none';
+let pageCheck = 'home';
 const fadeTime = 500;
 const transitionTime = 1500;
 // options[force] indicates if the change is guaranteed
@@ -101,18 +52,25 @@ function loadPage(pagename, options = {}) {
     pageCheck = pagename;
 
     if (!pagename || pagename === "home") {
+
+        plx.enable();
+        $('.logo-wrapper').removeClass('left');
+
         $('#subpage-wrapper').hide(fadeTime);
         $('#loadscreen')
             .addClass('reverse')
             .fadeIn(fadeTime);
         setTimeout(() => {
             $('#main').remove();
-            $('#subpage').remove();
             $('#loadscreen').fadeOut(fadeTime);
             $('#root').fadeIn(fadeTime);
             $('.sector.selected').removeClass('selected');
         }, transitionTime);
     } else {
+
+        plx.disable();
+        $('.logo-wrapper').addClass('left');
+
         $('#' + pagename + '-sector')
             .addClass('selected');
 
