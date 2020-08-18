@@ -35,7 +35,7 @@ body.loading #loadscreen {
 }
 
 .space {
-    background-image: url('../img/pozadieinv.png');
+    background-image: url('../img/pozadieinvsmall.png');
     background-size: cover;
     background-position: 50% 50%;
     min-height: 100vh;
