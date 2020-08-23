@@ -30,7 +30,7 @@ $(() => {
     $('body').on('click', 'a[data-link]', function(e) {
         loadPage(e.target.getAttribute("data-link"), { force: true });
     })
-})
+});
 
 let pageCheck = 'home';
 // fade between scenes
