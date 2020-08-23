@@ -57,7 +57,7 @@ body.loading #loadscreen {
 }
 
 .logo-wrapper.left a {
-    transform: translateX(calc(50% - 50vw))
+    transform: translateX(calc(50% - 45vw))
 }
 
 .logo-wrapper a {
