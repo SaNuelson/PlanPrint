@@ -50,7 +50,10 @@ function loadPage(pagename, options = {}) {
         $('#root').fadeOut(fadeTime);
         $('#miniloader').show();
         $('<div/>').load('subpages/' + pagename + '.htm div#main', function() {
-            console.log(this);
+            $('a', this).each(function(idx, el) {
+                // TODO: Fix this godawful workaround
+                el.href = el.href.replace('/img', '/PlanPrint/img');
+            });
             $('#miniloader').hide();
             $('#subpage-wrapper')
                 .append($(this).children())

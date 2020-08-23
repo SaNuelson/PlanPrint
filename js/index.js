@@ -82,7 +82,7 @@ function loadPage(pagename, options = {}) {
                 $('a', this).each(function(idx, el) {
                     // TODO: Fix this godawful workaround
                     el.href = el.href.replace('/img', '/PlanPrint/img');
-                })
+                });
                 $('#subpage-wrapper')
                     .append($(this).children())
                     .show(fadeTime);
