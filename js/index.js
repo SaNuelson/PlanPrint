@@ -79,9 +79,12 @@ function loadPage(pagename, options = {}) {
 
         setTimeout(() => {
             $('<div/>').load('subpages/' + pagename + '.htm div#main', function() {
-                $('a', this).add('img', this).each(function(idx, el) {
+                $('a', this).each(function(idx, el) {
                     // TODO: Fix this godawful workaround
                     el.href = el.href.replace('/img', '/PlanPrint/img');
+                });
+                $('img', this).each(function(idx, el) {
+                    el.src = el.src.replace('/img', '/PlanPrint/img');
                 });
                 $('#subpage-wrapper')
                     .append($(this).children())
