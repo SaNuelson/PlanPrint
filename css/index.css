@@ -92,6 +92,8 @@ a .img-thumbnail:hover {
     position: absolute;
     padding: .4rem;
     border: 2px dashed rgba(220, 220, 220, 0.75);
+    outline: 2px solid var(--plang);
+    outline-offset: 2px;
     background-color: black;
     transition: all .5s;
     min-height: .2rem;
@@ -103,18 +105,6 @@ a .img-thumbnail:hover {
     min-width: 100vw;
     min-height: 100vh;
     margin: 0 !important;
-}
-
-.sector::before {
-    content: ' ';
-    position: absolute;
-    background-color: black;
-    z-index: -1;
-    top: -5px;
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
-    border: 2px solid var(--plang);
 }
 
 #about-us-sector {
