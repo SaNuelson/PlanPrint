@@ -79,7 +79,10 @@ function loadPage(pagename, options = {}) {
 
         setTimeout(() => {
             $('<div/>').load('subpages/' + pagename + '.htm div#main', function() {
-                console.log(this);
+                $('a', this).each(function(idx, el) {
+                    // TODO: Fix this godawful workaround
+                    el.href = el.href.replace('/img', '/PlanPrint/img');
+                })
                 $('#subpage-wrapper')
                     .append($(this).children())
                     .show(fadeTime);
