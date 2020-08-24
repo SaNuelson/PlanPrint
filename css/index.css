@@ -66,11 +66,10 @@ body.loading #loadscreen {
 }
 
 .logo-wrapper img {
-    max-width: 50vw;
     box-shadow: 0 0 40px 40px rgba(0, 0, 0);
     border-radius: 0 0 2rem 2rem;
     background: black;
-    padding-top: 1em;
+    padding: 1em;
 }
 
 .vertical-center {
