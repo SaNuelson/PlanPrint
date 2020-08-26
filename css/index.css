@@ -190,7 +190,8 @@ a .img-thumbnail:hover {
     overflow: auto;
 }
 
-em {
+em,
+strong {
     color: var(--plang);
     font-weight: bold;
 }
@@ -243,4 +244,19 @@ em {
     color: var(--plangacc);
     box-shadow: 0 0 0 0.2rem var(--plangaccsemi);
     text-decoration: none;
+}
+
+.img-link {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.plain-list-group {
+    list-style-type: none;
+}
+
+.plain-list-group li {
+    position: relative;
+    display: block;
+    padding: .75rem 1.25rem;
 }

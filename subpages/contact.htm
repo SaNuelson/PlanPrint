@@ -10,6 +10,17 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="../css/index.css" rel="stylesheet" media="screen">
+    <noscript>
+        <style>
+            .gmap {
+                display: none;
+            }
+
+            .gmap-alt {
+                display: block !important;
+            }
+        </style>
+    </noscript>
 </head>
 
 <body>
@@ -18,7 +29,7 @@
             <img src="../img/logo.png" class="img-fluid" />
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -58,50 +69,43 @@
 
             <div class="row">
 
-                <div class="col-6 col-md-3">
+                <ul class="col-6 col-md-4 plain-list-group">
+                    <li>
+                        <strong>Farská 4</strong> (1.poschodie)
+                    </li>
+                    <li>
+                        <strong>949 01 Nitra</strong>
+                    </li>
+                    <li>
+                        tel: <strong>+421 (0)37 7418516</strong>
+                    </li>
+                    <li>
+                        mail: <strong>office/zavinac/planprint.sk</strong>
+                    </li>
+                    <li>
+                        IČO: <strong>36 698 695</strong>
+                    </li>
+                </ul>
 
-                    <div class="row ">
-                        PlanPrint s.r.o.
-                    </div>
-                    <div class="row ">
-                        Farská 4
-                    </div>
-                    <div class="row ">
-                        (1.poschodie)
-                    </div>
-                    <div class="row ">
-                        949 01 Nitra
-                    </div>
-                    <div class="row ">
-                        IČO: 36 698 695
-                    </div>
-                    <div class="row ">
-                        IČ DPH: SK2022270734
-                    </div>
-                    <div class="row ">
-                        tel: +421 (0)37 7418516
-                    </div>
-                    <div class="row ">
-                        mail: office/zavinac/planprint.sk
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-3">
-                    <div class="row ">
-                        Matúš Pavle
-                    </div>
-                    <div class="row ">
-                        +421 (0)905 547 475
-                    </div>
-                    <div class="row ">
+                <ul class="col-6 col-md-4 plain-list-group">
+                    <li>
+                        <strong>Matúš Pavle</strong>
+                    </li>
+                    <li>
+                        <strong>+421 (0)905 547 475</strong>
+                    </li>
+                    <li>
                         Otváracie hodiny:
-                    </div>
-                    <div class="row ">
-                        Pracovné dni 8.00 – 14.00
-                    </div>
-                </div>
+                    </li>
+                    <li>
+                        <strong>Pracovné dni 8.00 – 14.00</strong>
+                    </li>
+                    <li>
+                        IČ DPH: <strong>SK2022270734</strong>
+                    </li>
+                </ul>
 
-                <div class="col-12 col-md-6 vertical-center">
+                <div class="col-12 col-md-4 vertical-center">
                     <a class="img-link" href="../img/full/sidlo.jpg">
                         <img src="../img/resize/sidlo.jpg" class="img-fluid img-thumbnail float-right" />
                     </a>
@@ -109,9 +113,12 @@
 
 
             </div>
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-12">
                     <iframe class="gmap" src="https://maps.google.com/maps?q=PlanPrint&t=&z=14&ie=UTF8&iwloc=&output=embed"></iframe>
+                </div>
+                <div class="d-none gmap-alt">
+                    <img class="img-fluid img-thumbnail" src="../img/mapka.jpg" />
                 </div>
             </div>
         </div>
