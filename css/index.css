@@ -1,5 +1,10 @@
 :root {
-    --plang: rgb(0, 149, 63);
+    --plang: #5fa641;
+    --plangacc: rgb(106, 189, 70);
+    --plangaccsemi: rgb(106, 189, 70, .5);
+    --pwhite: #d4d5d6;
+    --pblack: #2b2a29;
+    --pblacksemi: #2b2a2988;
 }
 
 body {
@@ -9,7 +14,7 @@ body {
 a,
 p,
 div {
-    color: white;
+    color: var(--pwhite);
 }
 
 h1,
@@ -22,7 +27,7 @@ h6 {
 }
 
 a:hover {
-    color: white;
+    color: var(--pwhite);
     text-decoration: none;
 }
 
@@ -66,9 +71,8 @@ body.loading #loadscreen {
 }
 
 .logo-wrapper img {
-    box-shadow: 0 0 40px 40px rgba(0, 0, 0);
     border-radius: 0 0 2rem 2rem;
-    background: black;
+    background: rgba(0, 0, 0, 0.5);
     padding: 1em;
 }
 
@@ -111,26 +115,14 @@ a .img-thumbnail:hover {
     margin-left: 20vw;
 }
 
-#about-us-sector .star {
-    border-color: rgba(119, 168, 224, 0.75);
-}
-
 #contact-sector {
     margin-top: 30vh;
     margin-left: 65vw;
 }
 
-#contact-sector .star {
-    border-width: 4px;
-}
-
 #process-sector {
     margin-top: 45vh;
     margin-left: 15vw;
-}
-
-#process-sector .star {
-    border-color: rgba(248, 168, 76, 0.75);
 }
 
 #news-sector {
@@ -146,97 +138,6 @@ a .img-thumbnail:hover {
 #pricing-sector {
     margin-top: 80vh;
     margin-left: 65vw;
-}
-
-
-/*****************\
--- option footer --
-\*****************/
-
-.footer {
-    position: fixed;
-    bottom: 0;
-    height: 100px;
-    width: 100%;
-    transition: all 0.25s ease-in-out;
-}
-
-.footer.hidden {
-    height: 0;
-}
-
-.option-slider {
-    width: 400px;
-    height: 100%;
-    background-color: black;
-    border-radius: 0 50px 0 0;
-    border: 2px solid white;
-}
-
-.option-slider-button-wrapper {
-    position: relative;
-    top: -40px;
-    left: -2px;
-    width: 120px;
-    height: 40px;
-    background-color: black;
-    border-radius: 0 20px 0 0;
-    border: 2px solid white;
-    border-bottom: 2px solid black;
-}
-
-.option-slider-button {
-    cursor: pointer;
-    text-align: center;
-    padding-top: 5px;
-}
-
-
-/* Image Popup */
-
-.modal {
-    position: fixed;
-    display: none;
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 100px;
-    overflow: auto;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-}
-
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 85vw;
-}
-
-.modal-button {
-    cursor: pointer;
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.modal-content,
-.modal-caption {
-    animation-name: zoom;
-    animation-duration: 0.6s;
-}
-
-@keyframes zoom {
-    from {
-        transform: scale(0)
-    }
-    to {
-        transform: scale(1)
-    }
 }
 
 
@@ -274,4 +175,88 @@ a .img-thumbnail:hover {
     width: 100%;
     height: 100%;
     min-height: 20rem;
+}
+
+
+/* Styling for subpages with noscript */
+
+.sub-bg {
+    width: 100vw;
+    height: 85vh;
+    background-image: url(../img/podkladmin.png);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    overflow: auto;
+}
+
+em,
+strong {
+    color: var(--plang);
+    font-weight: bold;
+}
+
+.sub-page {
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 40px 20px rgba(0, 0, 0, 0.7);
+    min-height: 100vh;
+    padding-bottom: 20vh;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.bg-black-half {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.shadow-black {
+    box-shadow: 0 0 40px 20px rgba(0, 0, 0, 0.75);
+}
+
+.display-6 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+#subpage-wrapper {
+    padding-top: 15vh;
+}
+
+.border-plang {
+    border-color: var(--plang);
+}
+
+.btn-outline-plang {
+    color: var(--plang);
+    border-color: var(--plang);
+}
+
+.btn-outline-plang.focus,
+.btn-outline-plang:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.btn-outline-plang:hover {
+    color: var(--plangacc);
+    box-shadow: 0 0 0 0.2rem var(--plangaccsemi);
+    text-decoration: none;
+}
+
+.img-link {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.plain-list-group {
+    list-style-type: none;
+}
+
+.plain-list-group li {
+    position: relative;
+    display: block;
+    padding: .75rem 1.25rem;
 }
