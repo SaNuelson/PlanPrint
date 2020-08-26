@@ -1,5 +1,7 @@
 :root {
     --plang: #5fa641;
+    --plangacc: rgb(106, 189, 70);
+    --plangaccsemi: rgb(106, 189, 70, .5);
     --pwhite: #d4d5d6;
     --pblack: #2b2a29;
     --pblacksemi: #2b2a2988;
@@ -229,4 +231,16 @@ em {
 .btn-outline-plang {
     color: var(--plang);
     border-color: var(--plang);
+}
+
+.btn-outline-plang.focus,
+.btn-outline-plang:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.btn-outline-plang:hover {
+    color: var(--plangacc);
+    box-shadow: 0 0 0 0.2rem var(--plangaccsemi);
+    text-decoration: none;
 }
