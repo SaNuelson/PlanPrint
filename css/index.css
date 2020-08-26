@@ -221,3 +221,12 @@ em {
 #subpage-wrapper {
     padding-top: 15vh;
 }
+
+.border-plang {
+    border-color: var(--plang);
+}
+
+.btn-outline-plang {
+    color: var(--plang);
+    border-color: var(--plang);
+}
