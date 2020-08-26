@@ -182,7 +182,7 @@ a .img-thumbnail:hover {
 
 .sub-bg {
     width: 100vw;
-    height: 100vh;
+    height: 85vh;
     background-image: url(../img/podkladmin.png);
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.5);
