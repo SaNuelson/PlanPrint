@@ -16,13 +16,32 @@
     <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
     <link href="css/animation.css" rel="stylesheet" media="screen">
     <link href="css/index.css" rel="stylesheet" media="screen">
+    <style>
+        .space {
+            background: black;
+            min-height: 100vh;
+            min-width: 100vw;
+        }
+    </style>
 </head>
 
 <body>
 
     <div id="root" class="space">
 
-        <div data-depth="0.65">
+        <div data-depth="0.15" class="bg-vertical">
+            <img src="img/verticals.svg" />
+        </div>
+
+        <div data-depth="0.25" class="bg-horizontal">
+            <img src="img/horizontals.svg" />
+        </div>
+
+        <div data-depth="0.35" class="bg-objects">
+            <img src="img/objects.svg" />
+        </div>
+
+        <div data-depth="0.85">
             <div id="about-us-sector" class="sector link">
 
                 <div class="sector-header">
@@ -41,7 +60,7 @@
 
         </div>
 
-        <div data-depth="0.45">
+        <div data-depth="0.65">
             <div id="process-sector" class="sector link">
 
                 <div class="sector-header">
@@ -58,7 +77,7 @@
             </div>
         </div>
 
-        <div data-depth="0.25">
+        <div data-depth="0.45">
             <div id="services-sector" class="sector link">
 
                 <div class="sector-header">
