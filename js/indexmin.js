@@ -50,7 +50,7 @@ function loadPage(pagename, options = {}) {
         $('#root').fadeOut(fadeTime);
         $('#miniloader').show();
         $('<div/>').load('subpages/' + pagename + '.htm div#main', function() {
-            $('a', this).each(function(idx, el) {
+            $('a.img-link', this).each(function(idx, el) {
                 // TODO: Fix this godawful workaround
                 el.href = el.href.replace('/img', '/PlanPrint/img');
             });
