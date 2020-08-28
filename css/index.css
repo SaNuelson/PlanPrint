@@ -44,7 +44,7 @@ body.loading #loadscreen {
 }
 
 .space {
-    background-image: url('../img/pozadieinvsmall.png');
+    background-image: url('../img/pozadieinvsmallcontrast.png');
     background-size: cover;
     background-position: 50% 50%;
     min-height: 100vh;
@@ -102,6 +102,14 @@ a .img-thumbnail:hover {
     min-height: .2rem;
     min-width: .5rem;
     white-space: nowrap;
+    font-size: 1.2rem;
+}
+
+.sector:hover {
+    padding: .5rem .8rem;
+    font-style: italic;
+    border-width: 3px;
+    outline-width: 3px;
 }
 
 .sector.selected {
