@@ -190,7 +190,7 @@ a .img-thumbnail:hover {
 
 .sub-bg {
     width: 100vw;
-    height: 85vh;
+    height: calc(100vh - 4.4rem);
     background-image: url(../img/podkladmin.png);
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.5);
@@ -267,4 +267,12 @@ strong {
     position: relative;
     display: block;
     padding: .75rem 1.25rem;
+}
+
+.navbar {
+    height: 4.4rem;
+}
+
+.navbar-brand img {
+    max-height: 3.4rem;
 }
