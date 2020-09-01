@@ -91,6 +91,11 @@ a .img-thumbnail:hover {
     filter: grayscale(.7);
 }
 
+.sector-layer {
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
 .sector {
     position: absolute;
     padding: .4rem;
@@ -119,33 +124,33 @@ a .img-thumbnail:hover {
 }
 
 #about-us-sector {
-    margin-top: 15vh;
-    margin-left: 20vw;
+    top: 15vh;
+    left: 20vw;
 }
 
 #contact-sector {
-    margin-top: 28vh;
-    margin-left: 65vw;
+    top: 28vh;
+    left: 65vw;
 }
 
 #process-sector {
-    margin-top: 41vh;
-    margin-left: 15vw;
+    top: 41vh;
+    left: 15vw;
 }
 
 #news-sector {
-    margin-top: 54vh;
-    margin-left: 55vw;
+    top: 54vh;
+    left: 55vw;
 }
 
 #services-sector {
-    margin-top: 67vh;
-    margin-left: 30vw;
+    bottom: 10vh;
+    left: 5vw;
 }
 
 #pricing-sector {
-    margin-top: 80vh;
-    margin-left: 65vw;
+    bottom: 5vh;
+    right: 8vw;
 }
 
 

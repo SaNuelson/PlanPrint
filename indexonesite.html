@@ -16,14 +16,6 @@
     <link href="css/animation.css" rel="stylesheet" media="screen">
     <link href="css/index.css" rel="stylesheet" media="screen">
     <style>
-        .subpage-block {
-            display: none;
-        }
-        
-        .subpage-block.shown {
-            display: block;
-        }
-        
         .sub-bg {
             height: 100vh;
         }
@@ -41,7 +33,7 @@
 <body>
 
     <div id="root" class="space">
-        <div data-depth="0.25">
+        <div class="sector-layer" data-depth="0.25">
             <div id="services-sector" class="sector">
                 <a href="#services">Naše služby</a>
             </div>
@@ -553,48 +545,30 @@
         });
 
         $(() => {
+
+            if (document.requestFullscreen)
+                document.requestFullscreen();
+
             // check for dynamic link on load
-            if (window.location.hash && !loadPage(window.location.hash.replace('#', '')))
-                return;
+            if (window.location.hash && window.location.hash !== '#')
+                quickLoadPage();
 
             // check for dynamic link on history change
-            window.onpopstate = function(e) {
-                console.log("popstate");
-                loadPage(window.location.hash.replace('#', ''));
-            }
-
-            $('body').on('click', 'a[data-link]', function(e) {
-                loadPage(e.target.href.replace('#', ''), {
-                    force: true
-                });
-            })
+            window.onpopstate = () => loadPage();
         });
 
-        let pageCheck = 'home';
         // fade between scenes
         const fadeTime = 500;
         // total transition time
         const transitionTime = 1500;
-        // options[force] indicates if the change is guaranteed
-        function loadPage(pagename, options = {}) {
 
-            console.log("Trying to load page ", pagename);
-
-            if (!options["force"] && pageCheck === pagename)
-                return false;
-
-            console.log("Force unset or page differs from actual one");
-
-            pageCheck = pagename;
-
-            if (!pagename || pagename === "home") {
-
+        function loadPage() {
+            let pagename = window.location.hash.replace('#', '');
+            if (!pagename) {
                 $('.logo-wrapper').removeClass('left');
-
                 $('#loadscreen')
                     .addClass('reverse')
                     .fadeIn(fadeTime);
-
                 $('#subpage-wrapper').hide(fadeTime);
                 setTimeout(() => {
                     $('#loadscreen').fadeOut(fadeTime);
@@ -603,27 +577,26 @@
                     plx.enable();
                 }, transitionTime);
             } else {
-                let totalCheck = new Date().getTime();
-
                 plx.disable();
                 $('.logo-wrapper').addClass('left');
-
                 $('#' + pagename + '-sector')
                     .addClass('selected');
-
                 $('#root').fadeOut(fadeTime);
                 $('#loadscreen')
                     .removeClass('reverse')
                     .fadeIn(fadeTime);
-
                 setTimeout(function() {
                     $('#subpage-wrapper').fadeIn(fadeTime);
                     $('#loadscreen').fadeOut(fadeTime);
                 }, transitionTime);
-
             }
+        }
 
-            return true;
+        function quickLoadPage() {
+            plx.disable();
+            $('.logo-wrapper').addClass('left');
+            $('#root').hide();
+            $('#subpage-wrapper').show();
         }
     </script>
 
