@@ -147,10 +147,19 @@ a .img-thumbnail:hover {
 
 @media only screen and (max-width: 767px) {
     #about-us-sector {
-        left: 10vw;
+        left: 7vw;
     }
     #contact-sector {
-        left: 80vw;
+        left: 75vw;
+    }
+}
+
+@media only screen and (max-height: 300px) {
+    #contact-sector {
+        top: 23vh;
+    }
+    #news-sector {
+        top: 50vh;
     }
 }
 

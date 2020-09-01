@@ -10,17 +10,17 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xml:space="preserve"
-   width="0.7522403in"
-   height="0.48334238in"
+   width="0.83453298in"
+   height="0.5835281in"
    version="1.1"
    style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
-   viewBox="0 0 752.24031 483.34279"
+   viewBox="0 0 834.53296 583.52859"
    id="svg923"
    sodipodi:docname="favicon.svg"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"><metadata
    id="metadata927"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><sodipodi:namedview
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><sodipodi:namedview
    pagecolor="#ffffff"
    bordercolor="#666666"
    borderopacity="1"
@@ -33,9 +33,9 @@
    inkscape:window-height="1027"
    id="namedview925"
    showgrid="false"
-   inkscape:zoom="8"
-   inkscape:cx="31.244088"
-   inkscape:cy="20.841761"
+   inkscape:zoom="12.471956"
+   inkscape:cx="42.172292"
+   inkscape:cy="34.428527"
    inkscape:window-x="-8"
    inkscape:window-y="-8"
    inkscape:window-maximized="1"
@@ -135,40 +135,51 @@
  </defs>
  <g
    id="Vrstva_x0020_1"
-   transform="translate(-2227.476,-2646.2992)">
+   transform="translate(-1433.8106,-2605.3613)">
   <metadata
    id="CorelCorpID_0Corel-Layer" />
-  
   <g
-   transform="matrix(1.32946,0,0,1,-5340.8057,-2716.8182)"
-   id="g910"
-   style="fill:#c3c2c0;fill-opacity:1">
-   <g
-   aria-label="Print"
-   style="font-weight:normal;font-size:672.02001953px;font-family:'Swis721 Blk BT';fill:#c3c2c0;fill-opacity:1"
-   id="text908"><path
-     d="m 5979.6583,5580.3427 h 49.8765 q 48.564,0 64.9707,-10.8285 16.4067,-10.8284 16.4067,-38.3918 0,-27.8914 -15.7504,-38.7199 -15.7505,-10.8284 -65.627,-10.8284 h -49.8765 z M 5824.4506,5846.46 v -483.3426 h 198.8497 q 65.955,0 104.3468,7.8753 38.7199,7.5471 64.6426,24.6101 33.4697,22.6413 49.8764,56.111 16.4068,33.4698 16.4068,79.4086 0,81.0493 -47.9077,124.3631 -47.9077,42.9857 -138.1447,42.9857 h -92.8622 V 5846.46 Z"
-     style="font-weight:normal;font-size:672.02001953px;font-family:'Swis721 Blk BT';fill:#c3c2c0;fill-opacity:1"
-     id="path888"
-     inkscape:connector-curvature="0" /></g>
-
-  </g><g
-   transform="matrix(1.32946,0,0,1,-3328.963,-2716.8182)"
+   transform="matrix(1.32946,0,0,1,-3677.73,-2993.21)"
    id="g906"
    style="fill-opacity:1">
    <g
    aria-label="Plan"
    style="font-weight:normal;font-size:672.02001953px;font-family:'Swis721 Blk BT';fill:#5ea541;fill-opacity:1"
-   id="text904"><path
-     d="m 4334.6783,5580.3427 h 49.8765 q 48.564,0 64.9707,-10.8285 16.4068,-10.8284 16.4068,-38.3918 0,-27.8914 -15.7505,-38.7199 -15.7505,-10.8284 -65.627,-10.8284 h -49.8765 z M 4179.4706,5846.46 v -483.3426 h 198.8497 q 65.9551,0 104.3468,7.8753 38.7199,7.5471 64.6426,24.6101 33.4697,22.6413 49.8765,56.111 16.4067,33.4698 16.4067,79.4086 0,81.0493 -47.9077,124.3631 -47.9076,42.9857 -138.1447,42.9857 h -92.8622 V 5846.46 Z"
-     style="font-weight:normal;font-size:672.02001953px;font-family:'Swis721 Blk BT';fill:#5ea541;fill-opacity:1"
-     id="path899"
-     inkscape:connector-curvature="0" /></g>
+   id="text904" />
 
   </g>
   
   
-  
-  
+  <rect
+   style="opacity:0.98999999;vector-effect:none;fill:#ffffff;fill-opacity:0.19685041;stroke:none;stroke-width:27.79528618;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:2.61313009;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+   id="rect841"
+   width="835.08136"
+   height="583.4939"
+   x="1433.8105"
+   y="2605.3958"
+   ry="0" /><line
+   class="fil2 str0"
+   x1="1433.875"
+   y1="2959.71"
+   x2="2268.2795"
+   y2="2959.1052"
+   id="line916"
+   style="fill:none;stroke:#2b2a29;stroke-width:27.79528809;stroke-miterlimit:2.61313009;stroke-dasharray:none" />
+  <line
+   class="fil2 str0"
+   x1="1685.035"
+   y1="2605.3613"
+   x2="1685.035"
+   y2="3188.8896"
+   id="line918"
+   style="fill:none;stroke:#2b2a29;stroke-width:27.78000069;stroke-miterlimit:2.61313009" />
+  <ellipse
+   class="fil3 str1"
+   cx="1683.4916"
+   cy="2961.23"
+   rx="123.98"
+   ry="115.13"
+   id="ellipse920"
+   style="fill:#5fa641;stroke:#2b2a29;stroke-width:27.79528809;stroke-miterlimit:2.61313009;stroke-dasharray:none" />
  </g>
 </svg>
