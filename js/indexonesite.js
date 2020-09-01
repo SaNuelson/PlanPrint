@@ -4,7 +4,7 @@ const plx = new Parallax(document.getElementById('root'), {
     pointerEvents: true
 });
 
-$(() => {
+$(function() {
 
     if (document.requestFullscreen)
         document.requestFullscreen();
@@ -14,7 +14,7 @@ $(() => {
         quickLoadPage();
 
     // check for dynamic link on history change
-    window.onpopstate = () => loadPage();
+    window.onpopstate = function() { loadPage() };
 });
 
 // fade between scenes
@@ -30,7 +30,7 @@ function loadPage() {
             .addClass('reverse')
             .fadeIn(fadeTime);
         $('#subpage-wrapper').hide(fadeTime);
-        setTimeout(() => {
+        setTimeout(function() {
             $('#loadscreen').fadeOut(fadeTime);
             $('#root').fadeIn(fadeTime);
             $('.sector.selected').removeClass('selected');
