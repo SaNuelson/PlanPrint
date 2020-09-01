@@ -132,17 +132,26 @@ a .img-thumbnail:hover {
 
 #news-sector {
     top: 54vh;
-    left: 55vw;
+    left: 70vw;
 }
 
 #services-sector {
-    bottom: 10vh;
-    left: 5vw;
+    top: 70vh;
+    left: 20vw;
 }
 
 #pricing-sector {
-    bottom: 5vh;
-    right: 8vw;
+    top: 75vh;
+    left: 65vw;
+}
+
+@media only screen and (max-width: 767px) {
+    #about-us-sector {
+        left: 10vw;
+    }
+    #contact-sector {
+        left: 80vw;
+    }
 }
 
 
