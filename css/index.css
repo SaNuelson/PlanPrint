@@ -43,6 +43,7 @@ body.loading #loadscreen {
 }
 
 .logo-wrapper {
+    pointer-events: none;
     position: fixed;
     display: flex;
     padding: 0 2em;
@@ -57,6 +58,7 @@ body.loading #loadscreen {
 }
 
 .logo-wrapper a {
+    pointer-events: initial;
     margin: auto;
     transition: all 1s ease-in-out;
 }
