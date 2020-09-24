@@ -31,6 +31,7 @@ function loadPage() {
             .fadeIn(fadeTime);
         $('#subpage-wrapper').hide(fadeTime);
         setTimeout(function() {
+            if(window.location.hash) return;
             $('#loadscreen').fadeOut(fadeTime);
             $('#root').fadeIn(fadeTime);
             $('.sector.selected').removeClass('selected');
@@ -46,6 +47,7 @@ function loadPage() {
             .removeClass('reverse')
             .fadeIn(fadeTime);
         setTimeout(function() {
+            if(!window.location.hash) return;
             $('#subpage-wrapper').fadeIn(fadeTime);
             $('#loadscreen').fadeOut(fadeTime);
         }, transitionTime);
@@ -57,4 +59,11 @@ function quickLoadPage() {
     $('.logo-wrapper').addClass('left');
     $('#root').hide();
     $('#subpage-wrapper').show();
+}
+
+function quickUnloadPage() {
+    plx.enable();
+    $('.logo-wrapper').removeClass('left');
+    $('#root').show();
+    $('#subpage-wrapper').hide();
 }
