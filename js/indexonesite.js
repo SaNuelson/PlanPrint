@@ -1,6 +1,4 @@
-'use strict';
-
-const plx = new Parallax(document.getElementById('root'), {
+var plx = new Parallax(document.getElementById('root'), {
     pointerEvents: true
 });
 
@@ -14,16 +12,16 @@ $(function() {
         quickLoadPage();
 
     // check for dynamic link on history change
-    window.onpopstate = function() { loadPage() };
+    window.onpopstate = function() { loadPage(); };
 });
 
 // fade between scenes
-const fadeTime = 500;
+var fadeTime = 500;
 // total transition time
-const transitionTime = 1500;
+var transitionTime = 800;
 
 function loadPage() {
-    let pagename = window.location.hash.replace('#', '');
+    var pagename = window.location.hash.replace('#', '');
     if (!pagename) {
         $('.logo-wrapper').removeClass('left');
         $('#loadscreen')
@@ -59,11 +57,4 @@ function quickLoadPage() {
     $('.logo-wrapper').addClass('left');
     $('#root').hide();
     $('#subpage-wrapper').show();
-}
-
-function quickUnloadPage() {
-    plx.enable();
-    $('.logo-wrapper').removeClass('left');
-    $('#root').show();
-    $('#subpage-wrapper').hide();
 }
