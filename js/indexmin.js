@@ -1,4 +1,4 @@
-$(() => {
+$(function(){
     // check for dynamic link on load
     if (window.location.hash && !loadPage(window.location.hash.replace('#', '')))
         return;
@@ -10,7 +10,7 @@ $(() => {
     }
 
     // replace static links
-    $('a[data-link]').each((_, el) => {
+    $('a[data-link]').each(function(_, el){
         console.log("replacing");
         $(el).attr('href', '#' + $(el).attr('data-link'));
     });
