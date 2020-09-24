@@ -2,7 +2,6 @@ body {
     overflow: hidden;
 }
 
-a,
 p,
 div {
     color: #d4d5d6;
@@ -13,13 +12,17 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+a {
     color: #5fa641;
 }
 
+a {
+    padding: 0 .7rem;
+}
+
 a:hover {
-    color: #d4d5d6;
-    text-decoration: none;
+    color: #4bd112;
 }
 
 body #loadscreen {
@@ -106,8 +109,6 @@ a .img-thumbnail:hover {
 .sector:hover {
     padding: .5rem .8rem;
     font-style: italic;
-    border-width: 3px;
-    outline-width: 3px;
 }
 
 .sector.selected {
