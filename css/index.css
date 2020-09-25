@@ -1,1 +1,350 @@
-body{overflow:hidden}div,p{color:#d4d5d6}a,h1,h2,h3,h4,h5,h6{color:#5fa641}a{padding:0 .7rem}a:hover{color:#4bd112}body #loadscreen{display:none}body.loading #loadscreen{display:block}.row+.row{margin-top:2em}.space{background-image:url(../img/background.png);background-size:cover;background-position:50% 50%;min-height:100vh;min-width:100vw}.logo-wrapper{pointer-events:none;position:fixed;display:flex;padding:0 2em;top:0;left:0;width:100%;transition:all 1s ease-in-out}.logo-wrapper.left a{transform:translateX(calc(50% - 45vw))}.logo-wrapper a{pointer-events:initial;margin:auto;transition:all 1s ease-in-out}.logo-wrapper img{border-radius:0 0 2rem 2rem;background:rgba(0,0,0,.5);padding:1em}.vertical-center{display:flex;align-items:center;flex-wrap:wrap}a .img-thumbnail{transition:.2s;cursor:pointer}a .img-thumbnail:hover{filter:grayscale(.7)}.sector-layer{min-height:100vh;min-width:100vw}.sector{position:absolute;padding:.4rem;border:2px dashed rgba(220,220,220,.75);outline:2px solid #5fa641;outline-offset:2px;background-color:#000;transition:all .5s;min-height:.2rem;min-width:.5rem;white-space:nowrap;font-size:1.2rem}.sector:hover{padding:.5rem .8rem;font-style:italic}.sector.selected{min-width:100vw;min-height:100vh;top:0!important;left:0!important}#about-us-sector{top:15vh;left:20vw}#contact-sector{top:28vh;left:65vw}#process-sector{top:41vh;left:15vw}#news-sector{top:54vh;left:70vw}#services-sector{top:70vh;left:20vw}#pricing-sector{top:75vh;left:65vw}@media only screen and (max-width:767px){#about-us-sector{left:7vw}#contact-sector{left:75vw}}@media only screen and (max-height:300px){#contact-sector{top:23vh}#news-sector{top:50vh}}::-webkit-scrollbar{width:15px}::-webkit-scrollbar-track{background:#222;border-radius:10px}::-webkit-scrollbar-thumb{background:#666;box-shadow:inset 0 0 40px 15px rgba(0,0,0,.5);border:2px solid #5fa641;border-radius:10px}::-webkit-scrollbar-thumb:hover{background:#888}.news-show-more-btn::after{content:"Zobraziť menej"}.news-show-more-btn.collapsed::after{content:"Zobraziť viac"}.gmap{width:100%;height:100%;min-height:20rem}.sub-bg{width:100vw;height:calc(100vh - 4.4rem);background-image:url(../img/background2.png);background-size:cover;background-color:rgba(0,0,0,.5);background-blend-mode:multiply;overflow:auto}em,strong{color:#5fa641;font-weight:700}.sub-page{background-color:rgba(0,0,0,.7);box-shadow:0 0 40px 20px rgba(0,0,0,.7);min-height:100vh;padding-bottom:20vh}.bg-black{background-color:#000}.bg-black-half{background-color:rgba(0,0,0,.5)}.shadow-black{box-shadow:0 0 40px 20px rgba(0,0,0,.75)}.display-6{font-size:2.5rem;font-weight:300;line-height:1.2}#subpage-wrapper{padding-top:15vh}.border-plang{border-color:#5fa641}.btn-outline-plang{color:#5fa641;border-color:#5fa641}.btn-outline-plang.focus,.btn-outline-plang:focus{outline:0;box-shadow:none}.btn-outline-plang:hover{color:#6abd46;box-shadow:0 0 0 .2rem rgb(106,189,70,.5);text-decoration:none}.img-link{margin-left:auto;margin-right:auto}.plain-list-group{list-style-type:none}.plain-list-group li{position:relative;display:block;padding:.75rem 1.25rem}.navbar{height:4.4rem}.navbar-brand img{max-height:3.4rem}
+body {
+	overflow: hidden
+}
+
+div,
+p {
+	color: #d4d5d6
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #5fa641
+}
+
+a {
+	padding: 0 .7rem
+}
+
+a:hover {
+	color: #4bd112
+}
+
+body #loadscreen {
+	display: none
+}
+
+body.loading #loadscreen {
+	display: block
+}
+
+.row+.row {
+	margin-top: 2em
+}
+
+.space {
+	background-image: url(../img/background.png);
+	background-size: cover;
+	background-position: 50% 50%;
+	min-height: 100vh;
+	min-width: 100vw
+}
+
+.logo-wrapper {
+	pointer-events: none;
+	position: fixed;
+	display: flex;
+	padding: 0 2em;
+	top: 0;
+	left: 0;
+	width: 100%;
+	transition: all 1s ease-in-out
+}
+
+.logo-wrapper.left a {
+	transform: translateX(calc(50% - 45vw))
+}
+
+.logo-wrapper a {
+	pointer-events: initial;
+	margin: auto;
+	transition: all 1s ease-in-out
+}
+
+.logo-wrapper img {
+	border-radius: 0 0 2rem 2rem;
+	background: rgba(0, 0, 0, .5);
+	padding: 1em
+}
+
+.vertical-center {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap
+}
+
+.img-thumbnail {
+	transition: .2s;
+	cursor: pointer
+}
+
+.img-thumbnail:hover {
+	filter: grayscale(.7)
+}
+
+.sector-layer {
+	min-height: 100vh;
+	min-width: 100vw
+}
+
+.sector {
+	position: absolute;
+	padding: .4rem;
+	border: 2px dashed rgba(220, 220, 220, .75);
+	outline: 2px solid #5fa641;
+	outline-offset: 2px;
+	background-color: #000;
+	transition: all .5s;
+	min-height: .2rem;
+	min-width: .5rem;
+	white-space: nowrap;
+	font-size: 1.2rem
+}
+
+.sector:hover {
+	padding: .5rem .8rem;
+	font-style: italic
+}
+
+.sector.selected {
+	min-width: 100vw;
+	min-height: 100vh;
+	top: 0!important;
+	left: 0!important
+}
+
+#about-us-sector {
+	top: 15vh;
+	left: 20vw
+}
+
+#contact-sector {
+	top: 28vh;
+	left: 65vw
+}
+
+#process-sector {
+	top: 41vh;
+	left: 15vw
+}
+
+#news-sector {
+	top: 54vh;
+	left: 70vw
+}
+
+#services-sector {
+	top: 70vh;
+	left: 20vw
+}
+
+#pricing-sector {
+	top: 75vh;
+	left: 65vw
+}
+
+@media only screen and (max-width:767px) {
+	#about-us-sector {
+		left: 7vw
+	}
+	#contact-sector {
+		left: 75vw
+	}
+}
+
+@media only screen and (max-height:300px) {
+	#contact-sector {
+		top: 23vh
+	}
+	#news-sector {
+		top: 50vh
+	}
+}
+
+::-webkit-scrollbar {
+	width: 15px
+}
+
+::-webkit-scrollbar-track {
+	background: #222;
+	border-radius: 10px
+}
+
+::-webkit-scrollbar-thumb {
+	background: #666;
+	box-shadow: inset 0 0 40px 15px rgba(0, 0, 0, .5);
+	border: 2px solid #5fa641;
+	border-radius: 10px
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #888
+}
+
+.news-show-more-btn::after {
+	content: "Zobraziť menej"
+}
+
+.news-show-more-btn.collapsed::after {
+	content: "Zobraziť viac"
+}
+
+.gmap {
+	width: 100%;
+	height: 100%;
+	min-height: 20rem
+}
+
+.sub-bg {
+	width: 100vw;
+	height: calc(100vh - 4.4rem);
+	background-image: url(../img/background2.png);
+	background-size: cover;
+	background-color: rgba(0, 0, 0, .5);
+	background-blend-mode: multiply;
+	overflow: auto
+}
+
+em,
+strong {
+	color: #5fa641;
+	font-weight: 700
+}
+
+.sub-page {
+	background-color: rgba(0, 0, 0, .7);
+	box-shadow: 0 0 40px 20px rgba(0, 0, 0, .7);
+	min-height: 100vh;
+	padding-bottom: 20vh
+}
+
+.bg-black {
+	background-color: #000
+}
+
+.bg-black-half {
+	background-color: rgba(0, 0, 0, .5)
+}
+
+.shadow-black {
+	box-shadow: 0 0 40px 20px rgba(0, 0, 0, .75)
+}
+
+.display-6 {
+	font-size: 2.5rem;
+	font-weight: 300;
+	line-height: 1.2
+}
+
+#subpage-wrapper {
+	padding-top: 15vh
+}
+
+.border-plang {
+	border-color: #5fa641
+}
+
+.btn-outline-plang {
+	color: #5fa641;
+	border-color: #5fa641
+}
+
+.btn-outline-plang.focus,
+.btn-outline-plang:focus {
+	outline: 0;
+	box-shadow: none
+}
+
+.btn-outline-plang:hover {
+	color: #6abd46;
+	box-shadow: 0 0 0 .2rem rgb(106, 189, 70, .5);
+	text-decoration: none
+}
+
+.img-link {
+	margin-left: auto;
+	margin-right: auto
+}
+
+.plain-list-group {
+	list-style-type: none
+}
+
+.plain-list-group li {
+	position: relative;
+	display: block;
+	padding: .75rem 1.25rem
+}
+
+.navbar {
+	height: 4.4rem
+}
+
+.navbar-brand img {
+	max-height: 3.4rem
+}
+
+.modal {
+	display: none;
+	/* Hidden by default */
+	position: fixed;
+	/* Stay in place */
+	z-index: 1;
+	/* Sit on top */
+	padding-top: 100px;
+	/* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%;
+	/* Full width */
+	height: 100%;
+	/* Full height */
+	overflow: auto;
+	/* Enable scroll if needed */
+	background-color: rgb(0, 0, 0);
+	/* Fallback color */
+	background-color: rgba(0, 0, 0, 0.9);
+	/* Black w/ opacity */
+}
+
+
+/* Modal Content (Image) */
+
+.modal-content {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+}
+/* The Close Button */
+
+.close {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: #f1f1f1;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+/* 100% Image Width on Smaller Screens */
+
+@media only screen and (max-width: 700px) {
+	.modal-content {
+		width: 100%;
+	}
+}
